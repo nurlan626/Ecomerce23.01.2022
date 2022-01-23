@@ -58,7 +58,7 @@ const Cart = () => {
             <>
                 <div className="container">
                     <div className="row">
-                        <NavLink to="/checkout" className="btn btn-outline-dark mb-5 w-25 mx-auto">
+                        <NavLink to="/" className="btn btn-outline-dark mb-5 w-25 mx-auto">
                             Proceed to Checkout
                         </NavLink>
                     </div>
@@ -72,6 +72,13 @@ const Cart = () => {
             {state.length === 0 && emptyCart()}
             {state.length !== 0 && state.map(cartItems)}
             {state.length !== 0 && buttons()}
+            <div className='h-100px'>1</div>
+            <div className='h-100px'>1</div>
+            <div className='h-100px'>1</div>
+            <div className='h-100px'>1</div>
+            <div className='h-100px'>1</div>
+            <div className='h-100px'>1</div>
+            <div className='h-100px'>1</div>
         </div>
     );
 }

@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import { useDispatch } from 'react-redux';
-import { addCart } from '../redux/action';
+import { addCart } from '../../redux/action';
 import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
+import "./Product.scss"
 
 const Product = () => {
 
@@ -47,11 +48,11 @@ const Product = () => {
     const ShowProduct = () => {
         return(
             <>
-                <div className="col-md-6">
-                    <img src={product.image} alt={product.title} height="400px" width="400px" />
+                <div className="image col-md-6">
+                    <img src={product.image} alt={product.title} height="400px" />
                 </div>
                 <div className="col-md-6">
-                    <h4 className="text-uppercase text-black-50">
+                    <h4 className="title text-uppercase text-black-50">
                         {product.category}
                     </h4>
                     <h1 className="display-5">{product.title}</h1>
@@ -79,6 +80,7 @@ const Product = () => {
             <div className="container py-5">
                 <div className="row py-4">
                     {loading ? <Loading/> : <ShowProduct/>}
+                    
                 </div>
             </div>
         </div>

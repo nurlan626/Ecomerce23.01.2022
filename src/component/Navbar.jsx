@@ -22,6 +22,8 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+
+
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -45,15 +47,19 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
+
             <div className="buttons">
-                <NavLink to="/login" className="btn btn-outline-dark">
+                <NavLink to="/" className="btn btn-outline-dark">
                    <i className="fa fa-sign-in me-1"></i> Login</NavLink>
-                <NavLink to="/register" className="btn btn-outline-dark ms-2">
+                <NavLink to="/" className="btn btn-outline-dark ms-2">
                    <i className="fa fa-user-plus me-1"></i> Register</NavLink>
                 <NavLink to="/cart" className="btn btn-outline-dark ms-2">
                    <i className="fa fa-shopping-cart me-1"></i> Cart ({state.length})</NavLink>
             </div>
+            
           </div>
+
+
         </div>
       </nav>
     </div>

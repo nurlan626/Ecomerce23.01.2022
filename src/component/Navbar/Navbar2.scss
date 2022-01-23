@@ -1,0 +1,121 @@
+li{
+    list-style: none;
+}
+.navigationContainer {
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .menuIcon {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+    }
+    .mobileNavigation {
+        display: none;
+
+    }
+    .logo{
+        font-size: 30px;
+        text-decoration: none;
+        color: rgb(36, 33, 33);
+        font-weight: 500;
+    }
+    .links {
+        width: 400px;
+        
+        
+        & > ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        &> ul > li >a {
+        text-decoration: none;
+        color: rgb(49, 46, 46);
+        font-size: 20px;
+        font-weight: 400;
+         }
+        &> ul > li >a:hover{
+        text-decoration: none;
+        color: rgb(150, 50, 50);
+        font-size: 20px;
+        font-weight: 400;
+         }
+    }
+    .buttons-container{
+        .button {
+            color: rgb(49, 46, 46);
+            border: 1px solid grey;
+            text-decoration: none;
+            padding: 7px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .button:hover {
+            color: rgb(49, 46, 46);
+            background-color: rgb(73, 70, 70);
+            color: white;
+           
+          
+            box-shadow: 5px 10px 5px #aaaaaa;
+
+        }
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .navigationContainer {
+        padding-left: 0;
+
+        .menuIcon {
+            display: block;
+            font-size: 40px;
+        }
+        .navigation {
+            display: none;
+        }
+        .mobileNavigation {
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content: left;
+        }
+        .hideMobileNavigation{
+            display: none;
+        }
+        .linksUl{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            padding-left: 0;
+            height: 200px;
+
+        }
+        .links {
+            & > ul {
+                display: flex;
+                align-items:flex-start;
+                margin-top: 10px;
+            }
+        }
+
+        .buttons-container{
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+ }
+

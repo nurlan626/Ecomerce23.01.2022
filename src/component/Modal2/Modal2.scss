@@ -1,0 +1,28 @@
+.modal2 {
+    color: red;
+    font-size: 30px;
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.modal2.active{
+    transform: scale(1);
+
+
+}
+
+.modal2Content {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+   
+}
