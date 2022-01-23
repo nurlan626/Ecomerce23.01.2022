@@ -72,13 +72,13 @@ const Cart = () => {
             {state.length === 0 && emptyCart()}
             {state.length !== 0 && state.map(cartItems)}
             {state.length !== 0 && buttons()}
-            <div className='h-100px'>1</div>
-            <div className='h-100px'>1</div>
-            <div className='h-100px'>1</div>
-            <div className='h-100px'>1</div>
-            <div className='h-100px'>1</div>
-            <div className='h-100px'>1</div>
-            <div className='h-100px'>1</div>
+            <div className='h-100px'> </div>
+            <div className='h-100px'> </div>
+            <div className='h-100px'> </div>
+            <div className='h-100px'> </div>
+            <div className='h-100px'> </div>
+            <div className='h-100px'> </div>
+            <div className='h-100px'> </div>
         </div>
     );
 }
